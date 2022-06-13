@@ -4,6 +4,7 @@ use std::cmp::Ordering;
 
 fn main() {
     println!("Guess the number!");
+    println!("Type any non-number to quit.");
 
     let secret_number = rand::thread_rng().gen_range(1..101);
 
@@ -18,7 +19,7 @@ fn main() {
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(_) => continue,
+            Err(_) => break,
         };
 
         println!("You guessed: {}", guess);
