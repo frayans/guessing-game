@@ -1,2 +1,2 @@
 # Guessing Game
-A simple guessing game made in Rust
+A simple guessing game. Made with Rust.
